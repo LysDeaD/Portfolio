@@ -1,0 +1,98 @@
+body{
+    margin: 0%;
+    background: linear-gradient(45deg, #13270f 0%, rgba(20, 20, 20, 1) 100%);
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+.navMain{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    border-bottom-color: rgb(148, 148, 148);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+    padding-left: 0px;
+    background-color: rgba(0, 0, 0, 0.281);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.brandName{
+    margin-left: 5px;
+    width: 100px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.brandName a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.brandName:hover .color2TitleNav{
+    text-shadow: 0px 0px 10px #39FF14;
+    transition: 0.5s;
+}
+
+.color2TitleNav , .color2TitleMain{
+    color: #39FF14;
+}
+
+.nav-container ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    gap: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-container a{
+    color: rgb(143, 143, 143);
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.nav-container a:hover{
+    color: rgb(235, 235, 235);
+    border-bottom: solid 1px #39FF14;
+    transition: 0.5s;
+}
+
+.navLink1{
+    border: solid 1px #39FF14;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.5s;
+    margin: 25px 5px 25px 0px;
+    color: #39FF14;
+}
+
+.navLink1:hover, .navLink2:hover{
+    box-shadow: 0px 0px 10px 1px #39FF14;
+    transition: 0.2s;
+}
+
+.container {
+    display: grid;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}

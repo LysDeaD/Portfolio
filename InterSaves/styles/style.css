@@ -1,0 +1,226 @@
+body{
+    margin: 0%;
+    background: linear-gradient(45deg, #13270f 0%, rgba(20, 20, 20, 1) 100%);
+    user-select: none;
+}
+
+.navMain{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    border-bottom-color: rgb(148, 148, 148);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+    padding-left: 0px;
+    background-color: rgba(0, 0, 0, 0.281);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.brandName{
+    margin-left: 5px;
+    width: 100px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.brandName a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.brandName:hover .color2TitleNav{
+    text-shadow: 0px 0px 10px #39FF14;
+    transition: 0.5s;
+}
+
+.color2TitleNav , .color2TitleMain{
+    color: #39FF14;
+}
+
+.nav-container ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    gap: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container a{
+    color: rgb(143, 143, 143);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3s;
+}
+
+.nav-container a:hover{
+    color: rgb(235, 235, 235);
+    border-bottom: solid 1px #39FF14;
+    transition: 0.5s;
+}
+
+.navLink1, .navLink2{
+    border: solid 1px #39FF14;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+.navLink1{
+    margin: 25px 5px 25px 0px;
+    color: #39FF14;
+}
+
+.navLink2{
+    margin: 25px 5px 25px 5px;
+    background-color: #39FF14;
+    color: black;
+}
+
+.navLink1:hover, .navLink2:hover{
+    box-shadow: 0px 0px 10px 1px #39FF14;
+    transition: 0.2s;
+}
+
+.container {
+    display: grid;
+    padding-top: 100px;
+}
+
+.containerContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleR, .titleL{
+    color: white;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+}
+
+.titleR{
+    border-right: solid 1px rgb(143, 143, 143);
+    padding: 0px 50px 0px 0px;
+    margin-left: 20px;
+}
+
+.titleL{
+    border-left: solid 1px rgb(143, 143, 143);
+    padding: 0px 0px 0px 50px;
+}
+
+.titleR:hover .color2TitleMain, .titleL:hover .color2TitleMain{
+    text-shadow: 0px 0px 10px #39FF14;
+    transition: 0.5s;
+}
+
+.description{
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+    margin-right: 50px;
+    cursor: default;
+}
+
+.description a{
+    color: #39FF14;
+    transition: 0.5s;
+}
+
+.description a:hover{
+    text-shadow: 0px 0px 10px #39FF14;
+    border-bottom: solid 1px #39FF14;
+    transition: 0.5s;
+}
+
+hr{
+    border: none;
+    border-top: solid 1px rgb(143, 143, 143);
+    margin: 50px 0px;
+}
+
+.dataTitle{
+    color: white;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    cursor: default;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.data {
+    border: solid 1px rgb(143, 143, 143);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    padding: 80px;
+    background-color: rgba(0, 0, 0, 0.281);
+    transition: 0.5s;
+}
+
+.data:hover{
+    box-shadow: 0px 0px 10px 1px #39FF14;
+    padding: 60px;
+    background: linear-gradient(rgb(54, 54, 54), black);
+    transition: 0.5s;
+}
+
+.data:hover .dataNumber{
+    text-shadow: 0px 0px 10px #39FF14;
+    font-size: 80px;
+    transition: 0.5s;
+}
+
+.data:hover p{
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.dataContainer{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.dataNumber{
+    color: #39FF14;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 10px;
+}
+
+.photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
