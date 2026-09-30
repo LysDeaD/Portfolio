@@ -66,6 +66,16 @@ nav a:hover{
     transition: 0.5s;
 }
 
+nav ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
 nav h2{
     border-bottom: 1px solid #8d8d8d;
     padding-bottom: 5px;
@@ -125,12 +135,27 @@ nav hr{
     padding-bottom: 15px;
 }
 
-.cardtitles{
+.cardtitles {
     text-align: center;
     color: white;
     margin-left: 15%;
     margin-right: 3%;
     font-size: 50px;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: none;
+}
+
+/* Trait sous le titre */
+.cardtitles::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 1px;
+    background-color: #8d8d8d;
 }
 
 .photo{
@@ -203,10 +228,6 @@ nav hr{
     justify-content: left;
     font-size: 10px;
     margin: 5px;
-}
-
-#epreuveTitle{
-    margin: 2% 3% 3% 15%;
 }
 
 .epreuve{
